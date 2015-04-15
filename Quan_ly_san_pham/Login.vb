@@ -12,7 +12,7 @@ Public Class Login
             connect.Open()
             sqlAdapter.Fill(table)
             If table.Rows.Count > 0 Then
-                MessageBox.Show("Đã Connect")
+                MessageBox.Show("Đã Kết nối")
                 Main.Show()
                 Me.Hide()
             Else
@@ -23,6 +23,10 @@ Public Class Login
 
         End Try
 
+
+    End Sub
+
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class
